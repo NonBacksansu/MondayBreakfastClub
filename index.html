@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday Breakfast Club | Best Breakfast & Brunch in Jakarta</title>
+    <meta name="description" content="Find the best breakfast and brunch in Jakarta at Monday Breakfast Club. Fresh meals, great coffee, and good vibes. Reserve your table today!">
+    <meta name="keywords" content="Breakfast Jakarta, Best breakfast near me, Brunch Jakarta, Coffee breakfast Jakarta">
+    
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to External JS (defer ensures it loads after HTML) -->
+    <script src="script.js" defer></script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Monday Breakfast Club",
+      "image": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800",
+      "description": "The best breakfast spot in Jakarta to start your day.",
+      "servesCuisine": "Breakfast, Brunch, Coffee",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jakarta",
+        "addressCountry": "ID"
+      },
+      "telephone": "+6281234567890",
+      "url": "https://www.mondaybreakfastclub.com",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Google Tag Manager (Placeholder) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Monday Breakfast Club</div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a onclick="navigate('home')" class="active">Home</a></li>
+            <li><a onclick="navigate('menu')">Menu</a></li>
+            <li><a onclick="navigate('about')">About</a></li>
+            <li><a onclick="navigate('gallery')">Gallery</a></li>
+            <li><a onclick="navigate('reviews')">Reviews</a></li>
+            <li><a onclick="navigate('location')">Location</a></li>
+            <li><a onclick="navigate('reservations')">Reserve</a></li>
+            <li><a onclick="navigate('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="float-wa" onclick="trackEvent('WhatsApp Click')">
+      <i class="fab fa-whatsapp"></i>
+  </a>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=1200" alt="Delicious breakfast plate" class="hero-img" loading="lazy">
+            <h1>Best Breakfast Spot to Start Your Day</h1>
+            <p>Fresh meals. Great coffee. Good vibes.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="navigate('menu')">View Menu</button>
+                <button class="btn btn-secondary" onclick="navigate('reservations')">Reserve Table</button>
+                <button class="btn btn-secondary" onclick="navigate('location')">Get Directions</button>
+            </div>
+        </div>
+
+        <h2 class="section-title">Featured Dishes</h2>
+        <div class="grid-3">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500" alt="Avocado Toast" loading="lazy">
+                <h3>Classic Avo Toast</h3>
+                <p>Sourdough, smashed avocado, poached eggs.</p>
+                <div class="price">Rp 65.000</div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=500" alt="Pancakes" loading="lazy">
+                <h3>Monday Pancakes</h3>
+                <p>Fluffy stack with berry compote & maple.</p>
+                <div class="price">Rp 55.000</div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=500" alt="Coffee" loading="lazy">
+                <h3>Signature Latte</h3>
+                <p>Strong house blend, silky steamed milk.</p>
+                <div class="price">Rp 35.000</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="grid-4 text-center mt-30">
+            <div><i class="fas fa-leaf fa-3x icon-brown"></i><h3>Fresh Ingredients</h3></div>
+            <div><i class="fas fa-stopwatch fa-3x icon-brown"></i><h3>Fast Service</h3></div>
+            <div><i class="fas fa-couch fa-3x icon-brown"></i><h3>Cozy Space</h3></div>
+            <div><i class="fas fa-coffee fa-3x icon-brown"></i><h3>Strong Coffee</h3></div>
+        </div>
+
+        <div class="cta-banner">
+            <h2>Reserve Your Table Today</h2>
+            <p class="cta-subtitle">Limited seats available during peak hours!</p>
+            <button class="btn btn-primary inverted-btn" onclick="navigate('reservations')">Reserve Now</button>
+        </div>
+    </section>
+
+    <!-- MENU PAGE -->
+    <section id="menu" class="page-section">
+        <h1 class="text-center">Our Menu</h1>
+        <input type="text" id="menuSearch" class="search-bar" placeholder="Search menu items..." onkeyup="searchMenu()">
+        
+        <div class="menu-filters">
+            <button class="filter-btn active" onclick="filterMenu('all')">All</button>
+            <button class="filter-btn" onclick="filterMenu('breakfast')">Breakfast</button>
+            <button class="filter-btn" onclick="filterMenu('brunch')">Brunch</button>
+            <button class="filter-btn" onclick="filterMenu('coffee')">Coffee</button>
+        </div>
+
+        <div class="grid-3" id="menuGrid">
+            <div class="card menu-item" data-category="breakfast">
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500" alt="Avocado Toast" loading="lazy">
+                <h3 class="item-name">Classic Avo Toast</h3>
+                <p>Sourdough, smashed avocado, poached eggs.</p>
+                <div class="price">Rp 65.000</div>
+            </div>
+            <div class="card menu-item" data-category="brunch">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500" alt="Eggs Benedict" loading="lazy">
+                <h3 class="item-name">Eggs Benedict</h3>
+                <p>English muffin, smoked salmon, hollandaise.</p>
+                <div class="price">Rp 85.000</div>
+            </div>
+            <div class="card menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=500" alt="Latte" loading="lazy">
+                <h3 class="item-name">Signature Latte</h3>
+                <p>Double espresso with silky milk.</p>
+                <div class="price">Rp 35.000</div>
+            </div>
+             <div class="card menu-item" data-category="breakfast">
+                <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=500" alt="Pancakes" loading="lazy">
+                <h3 class="item-name">Monday Pancakes</h3>
+                <p>Fluffy stack with berry compote.</p>
+                <div class="price">Rp 55.000</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page-section">
+        <h1 class="text-center">About Us</h1>
+        <div class="grid-2 align-center mt-40">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800" alt="Cafe Interior" loading="lazy">
+            <div>
+                <h2>Our Story</h2>
+                <p>Monday Breakfast Club was born from a simple idea: Mondays shouldn't be boring. We created a space where the breakfast club culture thrives—a place where young professionals, remote workers, and friends can gather over exceptional food and coffee.</p>
+                <h2>Our Mission</h2>
+                <p>To deliver quality breakfast using local ingredients, creating a welcoming, Instagram-worthy space with fast, friendly service.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY PAGE -->
+    <section id="gallery" class="page-section">
+        <h1 class="text-center">Gallery</h1>
+        <div class="grid-3 mt-30 gallery-grid">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500" alt="Interior" onclick="openLightbox(this.src)" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=500" alt="Food" onclick="openLightbox(this.src)" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=500" alt="Coffee" onclick="openLightbox(this.src)" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500" alt="Food" onclick="openLightbox(this.src)" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500" alt="Brunch" onclick="openLightbox(this.src)" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=500" alt="Customer moments" onclick="openLightbox(this.src)" loading="lazy">
+        </div>
+    </section>
+
+    <!-- REVIEWS PAGE -->
+    <section id="reviews" class="page-section">
+        <h1 class="text-center">Customer Reviews</h1>
+        <div class="grid-3 mt-40">
+            <div class="card">
+                <div class="stars">★★★★★</div>
+                <p>"Best breakfast spot in Jakarta! The avocado toast is incredible and the vibe is perfect for remote working."</p>
+                <h4>- Sarah M.</h4>
+            </div>
+            <div class="card">
+                <div class="stars">★★★★★</div>
+                <p>"Super fast service even on busy weekends. Their signature latte is a must-try. Beautiful interior too!"</p>
+                <h4>- Kevin T.</h4>
+            </div>
+            <div class="card">
+                <div class="stars">★★★★★</div>
+                <p>"Love the breakfast club concept. Great place to hang out with friends. Food looks and tastes amazing."</p>
+                <h4>- Amanda R.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION PAGE -->
+    <section id="location" class="page-section">
+        <h1 class="text-center">Find Us</h1>
+        <div class="grid-2 mt-40">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.520546654876!2d106.74141027581137!3d-6.186846160682859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f79cb7cb0193%3A0x9a9d1a73af6a4c8b!2sMonday%20Breakfast%20Club!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" title="Google Map showing Monday Breakfast Club location" allowfullscreen> </iframe>
+            </div>
+            <div class="location-details">
+                <h2>Location Details</h2>
+                <p><strong>Address:</strong><br>Jl. Pesanggrahan No.X, Puri Indah, West Jakarta.</p>
+                <p><strong>Opening Hours:</strong><br>Monday - Sunday: 07:00 AM - 05:00 PM</p>
+                <p><strong>Parking:</strong><br>Dedicated parking available in front of the cafe.</p>
+                <a href="https://www.google.com/maps/place/Monday+Breakfast+Club/@-6.1900148,106.7362416,16.14z/data=!4m6!3m5!1s0x2e69f79cb7cb0193:0x9a9d1a73af6a4c8b!8m2!3d-6.1868954!4d106.7439852!16s%2Fg%2F11zjyjjt2v?entry=ttu" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-20">Open in Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATIONS PAGE -->
+    <section id="reservations" class="page-section">
+        <h1 class="text-center">Reserve a Table</h1>
+        <p class="text-center mb-30">Book ahead. Limited seats during peak hours.</p>
+        
+        <div class="urgency-banner">
+            <i class="fas fa-clock"></i> Tables are filling up fast for this weekend!
+        </div>
+
+        <form id="resForm" onsubmit="submitReservation(event)">
+            <input type="text" id="resName" placeholder="Full Name" required>
+            <input type="tel" id="resPhone" placeholder="Phone / WhatsApp Number" required>
+            <label for="resDate">Reservation Date</label>
+            <input type="date" id="resDate" name="resDate" required>
+            <label for="resTime">Reservation Time</label>
+            <input type="time" id="resTime" name="resTime" required>
+            <label for="resGuests">Number of Guests</label>
+            <select id="resGuests" name="resGuests" required>
+                <option value="" disabled selected>Number of Guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5+">5+ People</option>
+            </select>
+            <button type="submit" class="btn btn-primary full-width">Submit Reservation</button>
+            <div id="resConfirm" class="success-msg">
+                Reservation received! We will confirm via WhatsApp shortly.
+            </div>
+        </form>
+
+        <div class="text-center mt-30">
+            <p>Or book instantly via WhatsApp:</p>
+            <a href="https://wa.me/6281234567890?text=Hi!%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+              <i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page-section">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="grid-2 mt-40">
+            <form onsubmit="event.preventDefault(); alert('Message Sent!');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary full-width">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <h2>Get in Touch</h2>
+                <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
+                <p><i class="fas fa-envelope"></i> hello@mondaybreakfastclub.com</p>
+                <p><i class="fab fa-whatsapp"></i> +62 812 3456 7890</p>
+                <h3 class="mt-30">Follow Us</h3>
+                <div class="social-icons">
+                  <a href="#" class="instagram" aria-label="Visit our Instagram page"> <i class="fab fa-instagram"></i> </a> 
+                  <a href="#" class="tiktok" aria-label="Visit our TikTok page"> <i class="fab fa-tiktok"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Element -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded Image">
+    </div>
+
+</body>
+</html>
